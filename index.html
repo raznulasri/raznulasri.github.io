@@ -1,67 +1,126 @@
-<!DOCTYPE html>
-<html lang="ms">
-<head>
-  <meta charset="UTF-8">
-  <title>Portfolio Raznul Asri</title>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #121212;
-      font-family: Arial, sans-serif;
-      color: #f0f0f0;
-    }
-    .card {
-      background-color: #1e1e1e;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.7);
-      text-align: center;
-      max-width: 400px;
-    }
-    .card h1 {
-      margin: 0;
-      font-size: 28px;
-      color: #ffffff;
-    }
-    .card h2 {
-      margin: 10px 0;
-      font-size: 18px;
-      font-weight: normal;
-      color: #bbbbbb;
-    }
-    .skills {
-      margin: 20px 0;
-    }
-    .skills span {
-      display: inline-block;
-      background-color: #2a2a2a;
-      padding: 8px 12px;
-      margin: 5px;
-      border-radius: 6px;
-      font-size: 14px;
-      color: #00adb5;
-    }
-    .fact {
-      font-style: italic;
-      color: #cccccc;
-      margin-top: 15px;
-    }
-  </style>
-</head>
-<body>
-  <div class="card">
-    <h1>Raznul Asri</h1>
-    <h2>Linux Support, Cloud Administrator</h2>
-    <div class="skills">
-      <span>Linux</span>
-      <span>Git</span>
-      <span>Docker</span>
-    </div>
-    <p class="fact">Peminat tegar teknologi open-source yang sentiasa mencari jalan untuk mengautomasikan tugasan harian</p>
-  </div>
-</body>
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kad Profil - Raznul Asri</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #121212;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background-color: #1e2229;
+      border: 1.5px solid #d4af37;
+      border-radius: 20px;
+      padding: 40px 30px;
+      width: 360px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border: 3px solid #d4af37;
+      border-radius: 50%;
+      margin: 0 auto 20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 36px;
+      font-weight: bold;
+      color: #d4af37;
+    }
+
+    .name {
+      color: #ffffff;
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .role {
+      color: #d4af37;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .divider {
+      border: 0;
+      height: 1px;
+      background: #333a46;
+      margin: 20px 0;
+    }
+
+    .section-title {
+      color: #8a99ad;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .skills-pill {
+      background-color: #262c36;
+      color: #64b5f6;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .tags-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+    }
+
+    .tag {
+      border: 1px solid #d4af37;
+      color: #d4af37;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="avatar">RA</div>
+
+    <div class="name">Raznul Asri</div>
+    <div class="role">Linux Support, Cloud Support</div>
+
+    <hr class="divider">
+
+    <div class="section-title">KEMAHIRAN</div>
+    <div class="skills-pill">Linux | Git | Docker</div>
+
+    <hr class="divider">
+
+    <div class="section-title">FAKTA MENARIK</div>
+    <div class="tags-container">
+      <span class="tag">☕ Suka kopi</span>
+      <span class="tag">🎮 Gaming</span>
+      <span class="tag">⚛️ Peminat teknologi open-source</span>
+    </div>
+  </div>
+
+</body>
 </html>

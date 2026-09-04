@@ -1,133 +1,160 @@
-<!DOCTYPE html>
-<html lang="ms">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raznul Asri | Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        }
-
-        body {
-            background-color: #0f172a;
-            color: #f8fafc;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .card {
-            background-color: #1e293b;
-            border: 1px solid #334155;
-            border-radius: 16px;
-            padding: 40px;
-            max-width: 480px;
-            width: 100%;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
-            text-align: center;
-        }
-
-        .avatar {
-            width: 96px;
-            height: 96px;
-            background: linear-gradient(135deg, #3b82f6, #06b6d4);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            font-size: 36px;
-            font-weight: bold;
-            color: #ffffff;
-            box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
-        }
-
-        h1 {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: #f8fafc;
-            margin-bottom: 6px;
-        }
-
-        .role {
-            color: #38bdf8;
-            font-size: 0.95rem;
-            font-weight: 500;
-            margin-bottom: 24px;
-            letter-spacing: 0.5px;
-        }
-
-        .skills-container {
-            display: flex;
-            justify-content: center;
-            gap: 8px;
-            flex-wrap: wrap;
-            margin-bottom: 24px;
-        }
-
-        .skill-tag {
-            background-color: #0f172a;
-            color: #94a3b8;
-            border: 1px solid #334155;
-            padding: 6px 14px;
-            border-radius: 9999px;
-            font-size: 0.85rem;
-            font-weight: 500;
-        }
-
-        .divider {
-            height: 1px;
-            background-color: #334155;
-            margin: 24px 0;
-        }
-
-        .bio {
-            color: #cbd5e1;
-            font-size: 0.9rem;
-            line-height: 1.6;
-            text-align: left;
-            background-color: rgba(15, 23, 42, 0.5);
-            padding: 16px;
-            border-radius: 8px;
-            border-left: 3px solid #3b82f6;
-        }
-
-        .bio-title {
-            color: #94a3b8;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 6px;
-            font-weight: 600;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="card">
-        <div class="avatar">RA</div>
-        <h1>Raznul Asri</h1>
-        <div class="role">Linux Support | Cloud Administrator</div>
-        
-        <div class="skills-container">
-            <span class="skill-tag">Linux</span>
-            <span class="skill-tag">Git</span>
-            <span class="skill-tag">Docker</span>
-        </div>
-
-        <div class="divider"></div>
-
-        <div class="bio">
-            <div class="bio-title">Fakta Menarik</div>
-            Peminat tegar teknologi open-source yang sentiasa mencari jalan untuk mengautomasikan tugasan harian.
-        </div>
-    </div>
-
-</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raznul Asri | Linux Support & Cloud Administrator</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: #0a0f0d;
+      color: #e6f4ed;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .profile-card {
+      width: 100%;
+      max-width: 560px;
+      padding: 45px 40px;
+      text-align: center;
+      background: #101814;
+      border: 1px solid #26352d;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    .avatar {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #18251f;
+      border: 2px solid #4ade80;
+      color: #4ade80;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 34px;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+
+    .role {
+      color: #4ade80;
+      font-size: 17px;
+      margin-bottom: 28px;
+    }
+
+    .about {
+      color: #a8b8af;
+      line-height: 1.7;
+      font-size: 15px;
+      margin-bottom: 28px;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .skill {
+      padding: 9px 16px;
+      border-radius: 999px;
+      background: #18251f;
+      border: 1px solid #2d4136;
+      color: #d8e9df;
+      font-size: 14px;
+    }
+
+    .fact {
+      padding: 20px;
+      text-align: left;
+      background: #0c120f;
+      border-left: 3px solid #4ade80;
+      border-radius: 10px;
+      color: #a8b8af;
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    .fact strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #e6f4ed;
+      font-size: 15px;
+    }
+
+    footer {
+      margin-top: 28px;
+      color: #617269;
+      font-size: 12px;
+    }
+
+    @media (max-width: 480px) {
+      .profile-card {
+        padding: 35px 25px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="profile-card">
+
+    <div class="avatar">RA</div>
+
+    <h1>Raznul Asri</h1>
+
+    <div class="role">
+      Linux Support, Cloud Administrator
+    </div>
+
+    <p class="about">
+      Passionate about Linux infrastructure, cloud administration,
+      and building reliable technology solutions.
+    </p>
+
+    <div class="skills">
+      <span class="skill">Linux</span>
+      <span class="skill">Git</span>
+      <span class="skill">Docker</span>
+    </div>
+
+    <div class="fact">
+      <strong>Interesting Fact</strong>
+      A passionate open-source technology enthusiast who is always
+      looking for ways to automate daily tasks.
+    </div>
+
+    <footer>
+      © 2026 Raznul Asri
+    </footer>
+
+  </main>
+
+</body>
 </html>

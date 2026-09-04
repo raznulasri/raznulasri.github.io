@@ -1,126 +1,133 @@
 <!DOCTYPE html>
 <html lang="ms">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kad Profil - Raznul Asri</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raznul Asri | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
 
-    body {
-      background-color: #121212;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
 
-    .card {
-      background-color: #1e2229;
-      border: 1.5px solid #d4af37;
-      border-radius: 20px;
-      padding: 40px 30px;
-      width: 360px;
-      text-align: center;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    }
+        .card {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 480px;
+            width: 100%;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
 
-    .avatar {
-      width: 100px;
-      height: 100px;
-      border: 3px solid #d4af37;
-      border-radius: 50%;
-      margin: 0 auto 20px auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 36px;
-      font-weight: bold;
-      color: #d4af37;
-    }
+        .avatar {
+            width: 96px;
+            height: 96px;
+            background: linear-gradient(135deg, #3b82f6, #06b6d4);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 36px;
+            font-weight: bold;
+            color: #ffffff;
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+        }
 
-    .name {
-      color: #ffffff;
-      font-size: 26px;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #f8fafc;
+            margin-bottom: 6px;
+        }
 
-    .role {
-      color: #d4af37;
-      font-size: 14px;
-      margin-bottom: 20px;
-    }
+        .role {
+            color: #38bdf8;
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-bottom: 24px;
+            letter-spacing: 0.5px;
+        }
 
-    .divider {
-      border: 0;
-      height: 1px;
-      background: #333a46;
-      margin: 20px 0;
-    }
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+        }
 
-    .section-title {
-      color: #8a99ad;
-      font-size: 11px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-    }
+        .skill-tag {
+            background-color: #0f172a;
+            color: #94a3b8;
+            border: 1px solid #334155;
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
 
-    .skills-pill {
-      background-color: #262c36;
-      color: #64b5f6;
-      padding: 8px 16px;
-      border-radius: 20px;
-      font-size: 14px;
-      display: inline-block;
-      margin-bottom: 10px;
-    }
+        .divider {
+            height: 1px;
+            background-color: #334155;
+            margin: 24px 0;
+        }
 
-    .tags-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: center;
-    }
+        .bio {
+            color: #cbd5e1;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            text-align: left;
+            background-color: rgba(15, 23, 42, 0.5);
+            padding: 16px;
+            border-radius: 8px;
+            border-left: 3px solid #3b82f6;
+        }
 
-    .tag {
-      border: 1px solid #d4af37;
-      color: #d4af37;
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 13px;
-      background: transparent;
-    }
-  </style>
+        .bio-title {
+            color: #94a3b8;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="card">
-    <div class="avatar">RA</div>
+    <div class="card">
+        <div class="avatar">RA</div>
+        <h1>Raznul Asri</h1>
+        <div class="role">Linux Support | Cloud Administrator</div>
+        
+        <div class="skills-container">
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Docker</span>
+        </div>
 
-    <div class="name">Raznul Asri</div>
-    <div class="role">Linux Support, Cloud Support</div>
+        <div class="divider"></div>
 
-    <hr class="divider">
-
-    <div class="section-title">KEMAHIRAN</div>
-    <div class="skills-pill">Linux | Git | Docker</div>
-
-    <hr class="divider">
-
-    <div class="section-title">FAKTA MENARIK</div>
-    <div class="tags-container">
-      <span class="tag">☕ Suka kopi</span>
-      <span class="tag">🎮 Gaming</span>
-      <span class="tag">⚛️ Peminat teknologi open-source</span>
+        <div class="bio">
+            <div class="bio-title">Fakta Menarik</div>
+            Peminat tegar teknologi open-source yang sentiasa mencari jalan untuk mengautomasikan tugasan harian.
+        </div>
     </div>
-  </div>
 
 </body>
 </html>
